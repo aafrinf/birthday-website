@@ -11,16 +11,26 @@ function showSlides() {
     if (slideIndex > slides.length) { slideIndex = 1; }
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 3000);
+   
 }
 
 // Show Hidden Message
 function showMessage() {
     document.getElementById('hiddenMessage').style.display = 'block';
     startHearts();
+    document.getElementById('surprise-button').style.display = 'none';
+    startHearts();
+    document.getElementById('slideshow-container').style.display = 'block';
+    startHearts();
+    
     let body = document.querySelector(".background");
+    let heart = document.getElementById("animatedHeart");
 
     // Change background gradient dynamically
     body.style.background = "linear-gradient(-45deg, #6a11cb, #2575fc, #ff758c, #ff7eb3)";
+
+    // Show animated heart
+    heart.style.display = "block";
 }
 
 
@@ -54,19 +64,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-function showSurprise() {
-    let giftBox = document.getElementById("giftBox");
-    
-    // Show the gift box when surprise button is clicked
-    giftBox.style.display = "block";
-}
-
-function openGift() {
-    let giftBox = document.getElementById("giftBox");
-    let surpriseImage = document.getElementById("surpriseImage");
-
-    // Hide the gift box and show the surprise image
-    giftBox.style.display = "none";
-    surpriseImage.style.display = "block";
-}
  

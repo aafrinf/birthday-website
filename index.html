@@ -9,12 +9,12 @@
 <body>
     <div class="background"></div>
     <div class="container">
-        <h1 class="fade-in">🎉 Happy Birthday, My Love! 🎂</h1>
+        <h1 class="fade-in" >🎉 Happy Birthday, My Love!🎂</h1>
         <h2 class="fade-in">Mohamed Niyas</h2>
-        <p class="fade-in"> Every moment with you is a beautiful memory in the making.<br> May this year bring you as much joy and love as you bring into my life!" ❤️</p>
+        <p class="fade-in"> Every moment with you is a beautiful memory in the making.<br> May this year bring you as much joy and love as you bring into my life!" </p>
 
         <!-- Image Slideshow -->
-        <div class="slideshow-container">
+        <div class="slideshow-container" id="slideshow-container">
             <div class="slide fade">
                 <img src="images/slide 1.jpg" alt="Memory 1">
             </div>
@@ -45,7 +45,9 @@
         </div>
 
         <!-- Surprise Button -->
-        <button class="surprise-button" onclick="showMessage()">Click for a Surprise 💖</button>
+<div id="animatedHeart" class="heart-animation" style="display: none;">💞</div>
+
+        <button class="surprise-button" id="surprise-button" onclick="showMessage()">Click for a Surprise 👈🏻</button>
         <p id="hiddenMessage" class="hidden-message"> No matter what challenges we have faced in the past or what life brings in the future,<br> my love for you will always remain the same—strong, unshaken, and endless.<br> love you a lot's💖</p>
     </div>
 
@@ -58,6 +60,9 @@
 
     <!-- Floating Hearts -->
     <div id="hearts-container"></div>
+
+<!-- Animated Heart (Hidden Initially) -->
+    
 
     <script src="script.js"></script>
 </body>

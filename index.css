@@ -37,8 +37,10 @@ body, html {
 
 /* Fade-in Animation */
 .fade-in {
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 4s ease-in-out;
+    
 }
+ 
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
@@ -50,6 +52,7 @@ body, html {
     position: relative;
     max-width: 80%;
     margin: 20px auto;
+    display: none;
 }
 
 .slide {
@@ -58,7 +61,7 @@ body, html {
 
 img {
     width: 150px;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -90,7 +93,7 @@ img {
 /* Hidden Message */
 .hidden-message {
     display: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #fff;
     font-weight: bold;
     margin-top: 20px;
@@ -99,8 +102,8 @@ img {
 /* Floating Hearts */
 #hearts-container {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 100%;
+    left: 0%;
     width: 100%;
     height: 100%;
     pointer-events: none;
@@ -171,6 +174,21 @@ img {
     .heart {
         font-size: 16px;
     }
+}
+
+.heart-animation {
+    font-size: 3rem;
+    position: absolute;
+    top: 16%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
 }
 
  
