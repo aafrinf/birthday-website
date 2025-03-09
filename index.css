@@ -164,15 +164,18 @@ img {
     }
 
     .hidden-message {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .slideshow-container {
-        max-width: 90%;
+        max-width: 87%;
     }
 
     .heart {
-        font-size: 16px;
+        font-size: 10px;
+    }
+    .heart-animation {
+        display: none;
     }
 }
 
